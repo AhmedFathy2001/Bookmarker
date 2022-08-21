@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="successGifParent" class="d-none justify-content-center align-items-center w-100 h-100 position-absolute">
+        <svg id="successGif" class="checkmark d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Bookmarker
+                <hr>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <div class="content">
+                <h3>Bookmark your favorite sites</h3>
+                <div><label for="siteName" class="mb-2">Site Name</label>
+                    <input type="text" name="sitename" id="siteName" class="form-control p-2 mb-3"
+                        placeholder="Bookmark Name">
+                    <div class="invalid-feedback mb-2" id="invalidName">
+
+                    </div>
+                </div>
+                <div>
+                    <label for="siteUrl" class="mb-2">Site Url</label>
+                    <input type="text" name="siteurl" id="siteUrl" class="form-control p-2 mb-3"
+                        placeholder="Website Url">
+                    <div class="invalid-feedback mb-2" id="invalidUrl">
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="container">
+            <table class="w-75 mx-auto table my-5">
+                <tbody id="tBody">
+
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <div class="container">
+                <h6>© 2019 Bookmarker Inc.</h6>
+            </div>
+        </footer>
+
+    </main>
+    <script src="./js/script.js "></script>
+</body>
+
+</html>
